@@ -1,9 +1,9 @@
 ﻿namespace AdventOfCode2023;
 public static class Day_01
 {
-    public static int Part1(string inputPath)
+    public static int Part1(string input)
     {
-        return File.ReadLines(inputPath).Select(FindCalibrationValues).Sum();
+        return input.SplitLines().Select(FindCalibrationValues).Sum();
 
         static int FindCalibrationValues(string line)
         {
@@ -34,9 +34,9 @@ public static class Day_01
 
     private static readonly string[] Numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
-    public static int Part2(string inputPath)
+    public static int Part2(string input)
     {
-        return File.ReadLines(inputPath).Select(FindCalibrationValues).Sum();
+        return input.SplitLines().Select(FindCalibrationValues).Sum();
 
         static int FindCalibrationValues(string line)
         {
